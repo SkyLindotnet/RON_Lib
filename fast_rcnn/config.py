@@ -51,14 +51,17 @@ __C.SUPPORT_DB_lIST = ['jfa', 'wider', '300w', 'voc']
 # __C.MULTI_SCALE_RPN_NO = ['5', '4', '3']
 # __C.TRAIN.MULTI_SCALE_RPN_SCALE = [[16, 32], [8, 16], [4, 8]]
 
-__C.MULTI_SCALE_RPN_NO = ['6', '5', '4']
-__C.TRAIN.MULTI_SCALE_RPN_SCALE = [[8, 16], [4, 8], [2, 4]]
+# __C.MULTI_SCALE_RPN_NO = ['6', '5', '4']
+# __C.TRAIN.MULTI_SCALE_RPN_SCALE = [[8, 16], [4, 8], [2, 4]]
 
 # __C.MULTI_SCALE_RPN_NO = ['7', '6', '5']
 # __C.TRAIN.MULTI_SCALE_RPN_SCALE = [[8, 16], [4, 8], [2, 4]]
 
 # __C.MULTI_SCALE_RPN_NO = ['5', '4']
 # __C.TRAIN.MULTI_SCALE_RPN_SCALE = [[8, 16, 32], [2, 4, 8]]
+
+__C.MULTI_SCALE_RPN_NO = ['5']
+__C.TRAIN.MULTI_SCALE_RPN_SCALE = [[1, 2, 4, 8, 16, 32]]
 
 # Iterations between record metrics
 __C.TRAIN.METRIC_ITERS = 5000  # 5000 160000

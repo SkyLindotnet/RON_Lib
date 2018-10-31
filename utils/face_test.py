@@ -348,18 +348,19 @@ if __name__ == '__main__':
     cfg.TEST.NMS = 0.3  # 0.4
     cfg.TEST.RON_MIN_SIZE = 0.1  # 10
 
-    cfg.TEST.ADAPT_SCALE = 1
-    cfg.TEST.MIN_MAX_SCALES = [[640, 1000]]
+    # cfg.TEST.ADAPT_SCALE = 1
+    # cfg.TEST.MIN_MAX_SCALES = [[640, 1000]]
 
     cfg.GPU_ID = 2
-    method = 'wider/VGG16-ms-fpns-v1-2-reduce_3(4-5-6d_2)(norm)_adapt_640x1000_st(ssh1)_b3_t_iter_160000'
-    prototxt = 'wider/VGG16-MS-RPN/test_ms-fpns-v1-2-reduce_3(4-5-6d_2)(norm)_adapt'
+    # method = 'wider/VGG16-ms-fpns-v1-2-reduce_3(4-5-6d_2)(norm)_adapt_640x1000_st(ssh1)_b3_t_iter_160000'
+    method = 'wider/VGG16-ms-rpns-v2-reduce_1(5)_640x640_st(ssh1)_gpu1_iter_160000'
+    prototxt = 'wider/VGG16-MS-RPN/test_ms-rpns-v2-reduce_1(5)'
     # method = 'wider/VGG16_faster_rcnn_end2end_with_fuse_multianchor-ms-rpns_v2-4-1_voc_fp3_v3-10_m0.5_2_1_ms-rpns-v2-reduce_2(norm)-rois-norm-10-8-5_o_iter_200000'
     # prototxt = 'wider/VGG16-MS-RPN/test_fuse_multianchor_v2-4-1-ms-rpns-v2-reduce_2(norm)-roi-norm-10-8-5'
     # [d3-k(3-5)]
     testDataSet = 'wider_val'
-    testType = 'normal'  # normal benchmark
-    suffix = 'VAL_TEMP'  # OT(0.7)_
+    testType = 'benchmark'  # normal benchmark
+    suffix = 'VAL'  # OT(0.7)_
     # endregion
 
     # region filePath auto match
